@@ -277,7 +277,6 @@ p {
     padding-left: 0;
     margin-top: 0;
 }
-
 .feature-list .title{
     margin-top: 0;
     margin-bottom: 10px;
@@ -293,50 +292,6 @@ p {
     margin-top: 0;
     margin-right: 30px;
 }
-.feature-list .item:nth-child(1):before{
-    display: block;
-    content: "";
-    height: 70px;
-    outline: 1px solid red;
-    background-image: url("../images/antenna.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.feature-list .item:nth-child(2):before{
-    display: flex;
-    content: "";
-    height: 70px;
-    outline: 1px solid red;
-    background-image: url("../images/clock.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.feature-list .item:nth-child(3):before{
-    display: block;
-    content: "";
-    height: 70px;
-    outline: 1px solid red;
-    background-image: url("../images/diagram.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.feature-list .item:nth-child(4):before{
-    display: block;
-    content: "";
-    height: 70px;
-    outline: 1px solid red;
-    background-image: url("../images/astronaut.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
 .feature-list .item:last-child{
     margin-right: 0;
 }
@@ -349,6 +304,28 @@ p {
     line-height: 1.7142;
     letter-spacing: 0.03em;
 }
+.features-link {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.features-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.features-icon{
+    fill: currentColor;
+}
+/* .features-link:hover{
+    background-color: #2196F3;
+} */
 /*----------------------------- Section pic ---------------------- */
 .section-title .pic{
     margin-top: 0;
@@ -426,12 +403,6 @@ p {
     background-color: #2196F3;
     color: #FFFFFF;
 }
-.actions{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    outline: 1px solid black;
-}
 
 /* ------------------------- Постійні клієнти --------------------- */
 .company-logo-list{
@@ -458,6 +429,7 @@ p {
 }
 .company-link:hover{
     border-color: #2196F3;
+    color: #2196F3;
 }
 /* ----------------------------- Footer --------------------------- */
 .footer{
@@ -465,6 +437,15 @@ p {
     font-style: none;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.container-footer{
+    display: flex;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 .logo-link.ftr{
     display: block;
@@ -512,7 +493,45 @@ p {
     color: #FFFFFF99;
     text-decoration: none;
 }
-
+.soc-footer{
+    margin-left: 70px;
+}
+.soc-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+}
+.soc-footer-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.soc-footer-item{
+    width: 44px;
+    height: 44px;
+}
+.soc-footer-link{
+    width: 100%;
+    height: 100%;
+    background-color:#212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+.footer-icon{
+    fill: currentColor;
+}
+.soc-footer-link:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
 /*------------------------------ Портфоліо ------------------------ */
 .btn-list{
     display: flex;
@@ -593,3 +612,61 @@ p {
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+
+/* .feature-list .item:nth-child(1):before{
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: 270px 120px;
+    outline: 1px solid red;
+    background-image: url("../images/antenna.svg");
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.feature-list .item:nth-child(2):before{
+    display: flex;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: 270px 120px;
+    outline: 1px solid red;
+    background-image: url("../images/clock.svg");
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.feature-list .item:nth-child(3):before{
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: 270px 120px;
+    outline: 1px solid red;
+    background-image: url("../images/diagram.svg");
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.feature-list .item:nth-child(4):before{
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: 270px 120px;
+    outline: 1px solid red;
+    background-image: url("../images/astronaut.svg");
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+} */
