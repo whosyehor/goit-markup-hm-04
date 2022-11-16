@@ -137,7 +137,8 @@ p {
     text-decoration: none;
 }
 .link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color:#757575;
@@ -151,7 +152,6 @@ p {
     color: #2196F3;
 }
 .icon-mail{
-    align-items: center;
     margin-right: 10px;
 }
 .icon-mail{
@@ -164,7 +164,8 @@ p {
     text-decoration: none;
 }
 .phone-number{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
